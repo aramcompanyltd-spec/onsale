@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>벽돌깨기 게임 무료 온라인 — 회원가입 없이 바로 플레이 | 퓨전 아케이드</title>
+<meta name="description" content="회원가입 없이 브라우저에서 바로 즐기는 무료 벽돌깨기(Breakout) 게임. 패들로 공을 튕겨 모든 벽돌을 부수고 최고 점수에 도전하세요.">
+<link rel="canonical" href="https://example.com/games/breakout.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="game-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">FUSION<span>ARCADE</span></a>
+    <nav class="site-nav">
+      <a href="../index.html#games">게임 목록</a>
+      <a href="../about.html">소개</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="breadcrumb"><a href="../index.html">홈</a> / 벽돌깨기</div>
+  <h1 style="font-size:18px;">벽돌깨기 (BREAKOUT)</h1>
+
+  <section class="game-stage">
+    <div class="stage-frame">
+      <canvas id="game" width="480" height="360" aria-label="벽돌깨기 게임 화면"></canvas>
+    </div>
+    <div class="hud">
+      <span>SCORE <b id="score">0</b></span>
+      <span>LIVES <b id="lives">3</b></span>
+    </div>
+    <div class="controls-row">
+      <button class="btn primary" id="playBtn">▶ PLAY</button>
+    </div>
+    <div class="hud" id="gamestate"></div>
+  </section>
+
+  <div class="info-grid">
+    <div>
+      <h2>// ABOUT THIS GAME</h2>
+      <p>벽돌깨기는 패들로 공을 튕겨 화면 위쪽에 배치된 벽돌을 모두 부수는 클래식 반사신경 게임입니다. 공을 놓치면 목숨이 하나씩 줄어들며, 목숨을 모두 잃으면 게임이 종료됩니다. 모든 벽돌을 부수면 클리어입니다.</p>
+      <p>마우스나 터치, 키보드로 패들을 조작할 수 있으며 별도의 설치나 로그인 없이 바로 플레이할 수 있는 오리지널 구현입니다.</p>
+    </div>
+    <div class="howto">
+      <h3>// HOW TO PLAY</h3>
+      <ul>
+        <li>마우스를 좌우로 움직여 패들 조작</li>
+        <li>또는 <kbd>←</kbd><kbd>→</kbd> 방향키 사용</li>
+        <li>공을 놓치면 목숨 -1, 목숨 3개 소진 시 종료</li>
+        <li>모든 벽돌을 부수면 클리어</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Fusion Arcade</span>
+    <span><a href="../privacy.html">개인정보처리방침</a> · <a href="../terms.html">이용약관</a></span>
+  </div>
+</footer>
+
+<script src="breakout.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스네이크 게임 무료 온라인 — 회원가입 없이 바로 플레이 | 퓨전 아케이드</title>
+<meta name="description" content="회원가입 없이 브라우저에서 바로 즐기는 무료 스네이크 게임. 방향키로 조작하며 먹이를 먹고 몸통을 늘려 최고 점수에 도전하세요.">
+<link rel="canonical" href="https://example.com/games/snake.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="game-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">FUSION<span>ARCADE</span></a>
+    <nav class="site-nav">
+      <a href="../index.html#games">게임 목록</a>
+      <a href="../about.html">소개</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="breadcrumb"><a href="../index.html">홈</a> / 스네이크</div>
+  <h1 style="font-size:18px;">스네이크 (SNAKE)</h1>
+
+  <section class="game-stage">
+    <div class="stage-frame">
+      <canvas id="game" width="400" height="400" aria-label="스네이크 게임 화면"></canvas>
+    </div>
+    <div class="hud">
+      <span>SCORE <b id="score">0</b></span>
+      <span>BEST <b id="best">0</b></span>
+    </div>
+    <div class="controls-row">
+      <button class="btn primary" id="playBtn">▶ PLAY</button>
+      <button class="btn" data-dir="up">↑</button>
+      <button class="btn" data-dir="down">↓</button>
+      <button class="btn" data-dir="left">←</button>
+      <button class="btn" data-dir="right">→</button>
+    </div>
+    <div class="hud" id="gamestate"></div>
+  </section>
+
+  <div class="info-grid">
+    <div>
+      <h2>// ABOUT THIS GAME</h2>
+      <p>스네이크는 화면 속 뱀을 조작해 먹이를 먹을 때마다 몸통이 길어지는 클래식 아케이드 게임입니다. 벽이나 자기 자신의 몸에 부딪히면 게임이 끝나며, 몸통이 길어질수록 공간 관리와 순간적인 판단력이 더 중요해집니다. 이 페이지의 스네이크는 별도의 설치나 로그인 없이 브라우저에서 즉시 실행되는 오리지널 구현입니다.</p>
+      <p>최고 점수는 이 브라우저에 자동으로 저장되어, 다시 방문했을 때 이전 기록과 비교하며 도전할 수 있습니다. 별도의 계정이나 서버 저장은 사용하지 않으므로 개인정보 입력이 전혀 필요 없습니다.</p>
+    </div>
+    <div class="howto">
+      <h3>// HOW TO PLAY</h3>
+      <ul>
+        <li><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> 방향키로 이동</li>
+        <li>노란색 먹이를 먹으면 점수 +10</li>
+        <li>먹을수록 속도가 빨라집니다</li>
+        <li>벽 또는 자기 몸통에 닿으면 종료</li>
+        <li>모바일은 화면 하단 버튼 사용</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Fusion Arcade</span>
+    <span><a href="../privacy.html">개인정보처리방침</a> · <a href="../terms.html">이용약관</a></span>
+  </div>
+</footer>
+
+<script src="snake.js"></script>
+</body>
+</html>
